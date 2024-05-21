@@ -12,11 +12,17 @@ gem "mysql2", "~> 0.5"
 # Pumaサーバーを使えるようにする(標準gem) [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+# CORS設定を管理する
+gem "rack-cors"
+
 # タイムゾーン情報を提供する（標準gem）
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 # Railsの起動時間を短縮する（標準gem）
 gem "bootsnap", require: false
+
+# 環境ごとの設定管理を行う
+gem "config"
 
 group :development, :test do
   # pryコンソールを使えるようにする
