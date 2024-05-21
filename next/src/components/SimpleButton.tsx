@@ -1,13 +1,12 @@
 import React from 'react'
 
 type SimpleButtonProps = {
-  text: string;
+  text: string
   onClick: () => void
 }
 
 export const SimpleButton: React.FC<SimpleButtonProps> = (props) => {
-  const { text, onClick } = props;
-
+  const { text, onClick } = props
 
   return <button onClick={onClick}>{text}</button>
 }

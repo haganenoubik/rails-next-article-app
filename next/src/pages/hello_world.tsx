@@ -1,9 +1,9 @@
-import { SimpleButton } from '@/components/SimpleButton'
 import type { NextPage } from 'next'
+import { SimpleButton } from '@/components/SimpleButton'
 
 const HelloWorld: NextPage = () => {
   const handleOnClick = () => {
-  console.log("Clicked from hello_world!");
+    console.log('Clicked from hello_world!')
   }
   return (
     <>
